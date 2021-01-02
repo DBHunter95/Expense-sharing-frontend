@@ -23,7 +23,7 @@ class GroupFrom extends Component {
                 <Form.Button  id="submit"
                   onClick={async () => {
                       const name=this.state.name;
-                      const response = await fetch("/users", {
+                      const response = await fetch("/api/users", {
                           method: "POST",
                           headers: {
                               "Content-Type": "application/json"
