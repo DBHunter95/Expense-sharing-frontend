@@ -51,7 +51,7 @@ class GroupForm extends Component {
                   onClick={async () => {
                       const name=this.state.name;
                       const members=this.state.members;
-                      const response = await fetch("/groups", {
+                      const response = await fetch("/api/groups", {
                           method: "POST",
                           headers: {
                               "Content-Type": "application/json"
