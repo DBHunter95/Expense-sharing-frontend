@@ -18,7 +18,7 @@ class UserDebts extends Component {
             const buyer_id=parseInt(payer);
             const borrower_id=parseInt(payee);
 
-            const response = await fetch("/transactions", {
+            const response = await fetch("/api/transactions", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
