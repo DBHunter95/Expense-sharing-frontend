@@ -17,7 +17,7 @@ function App() {
 
   // Fetch data from postgres database to store in state
   useEffect(() => {
-    fetch('/groups').then(response => response.json().then(data => {
+    fetch('/api/groups').then(response => response.json().then(data => {
       setGroups(data.groups);
     }));
 
