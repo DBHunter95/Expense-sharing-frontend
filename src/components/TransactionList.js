@@ -5,7 +5,7 @@ class TransactionList extends Component {
     // Sends Delete request with the id from the transaction
     handleDelete = (id) => (
         async () => {
-            const response = await fetch(`/transactions/${id}`, {
+            const response = await fetch(`/api/transactions/${id}`, {
                 method: "DELETE"
             });
 
