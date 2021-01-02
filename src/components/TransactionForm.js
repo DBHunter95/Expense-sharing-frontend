@@ -88,7 +88,7 @@ class TransactionForm extends Component {
                       "buyer_id": buyer_id, "borrower_id": borrower_id,
                       "group_id": group_id, "date": date}
 
-                      const response = await fetch("/transactions", {
+                      const response = await fetch("/api/transactions", {
                           method: "POST",
                           headers: {
                               "Content-Type": "application/json"
