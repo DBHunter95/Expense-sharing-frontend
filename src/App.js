@@ -24,14 +24,14 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetch('/users').then(response => response.json().then(data => {
+    fetch('/api/users').then(response => response.json().then(data => {
       setUsers(data.users);
     }));
 
   }, []);
 
   useEffect(() => {
-    fetch('/transactions').then(response => response.json().then(data => {
+    fetch('/api/transactions').then(response => response.json().then(data => {
       setTransactions(data.transactions);
     }));
 
